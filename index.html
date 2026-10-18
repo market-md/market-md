@@ -20,7 +20,7 @@
 <div class="toast" id="toast"></div>
 <script>
 const SUPABASE_URL = 'PASTE_SUPABASE_PROJECT_URL_HERE';
-const SUPABASE_ANON_KEY = 'PASTE_SUPABASE_ANON_KEY_HERE';
+const SUPABASE_ANON_KEY = 'sb_publishable_V-ORMNJA3x8pRACrU96apQ_PXqMjUqA';
 const backendReady = !!(window.supabase && SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('PASTE_') && SUPABASE_ANON_KEY.length>30 && !SUPABASE_ANON_KEY.includes('PASTE_'));
 const sb = backendReady ? window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY) : null;
 let currentUser=null, pendingMessage=null;
