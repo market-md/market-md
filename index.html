@@ -35,7 +35,7 @@
 <div class="backdrop" id="messageBackdrop"><section class="modal"><div class="modal-head"><h2>Написать продавцу</h2><button class="close" id="messageClose" type="button">×</button></div><textarea id="messageText" placeholder="Здравствуйте! Объявление актуально?" style="width:100%;min-height:100px;background:#0b1220;border:1px solid var(--line);border-radius:10px;padding:12px;color:var(--text)"></textarea><button class="btn primary form-submit" id="sendMessage" type="button">Отправить</button><p class="status-note" id="messageStatus"></p></section></div><div class="toast" id="toast"></div>
 <script>
 /* Вставь сюда Project URL и Publishable/anon key из Supabase Settings → API. */
-const SUPABASE_URL = 'PASTE_SUPABASE_PROJECT_URL_HERE';
+const SUPABASE_URL = 'https://uyshogupddevslrmydxp.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_V-ORMNJA3x8pRACrU96apQ_PXqMjUqA';
 const backendReady = !!(window.supabase && /^https:\/\/.+/.test(SUPABASE_URL) && !SUPABASE_URL.includes('PASTE_') && SUPABASE_ANON_KEY.length > 20 && !SUPABASE_ANON_KEY.includes('PASTE_'));
 const sb = backendReady ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
